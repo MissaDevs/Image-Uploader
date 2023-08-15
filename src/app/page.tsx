@@ -1,5 +1,5 @@
 'use client'
-import { Image, NextUIProvider, Progress } from '@nextui-org/react'
+import { NextUIProvider, Progress } from '@nextui-org/react'
 import { useState } from 'react'
 import { UploadFileResponse } from 'uploadthing/client'
 import { ImageUploaded } from '~/components/ImageUploaded'
@@ -21,7 +21,7 @@ export default function Home() {
             value={loadingVal}
             color="primary"
             showValueLabel={true}
-            className="max-w-md absolute m-auto left-0 top-1/2 bottom-0 right-0"
+            className="max-w-md absolute m-auto left-0 top-1/2 bottom-0 right-0 px-5"
           />
           : images.length > 0
             ? <ImageUploaded image={images[0]} />
